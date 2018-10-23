@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+vehicleMonitoringSystem
+</name>
+</assembly>
+<members>
+<member name="T:vehicleMonitoringSystem.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources._998">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_bulleted_list_filled_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_clear_symbol_filled_100">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_combo_chart_filled_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_delete_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_enter_filled_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_house_filled_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_login_filled_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_login_filled_50__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_plus_26">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_plus_52">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_plus_filled_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:vehicleMonitoringSystem.My.Resources.Resources.icons8_speed_filled_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
