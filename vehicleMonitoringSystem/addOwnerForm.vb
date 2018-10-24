@@ -142,19 +142,38 @@ Public Class addOwnerForm
 
         If personelComboBox.Text.Equals("Academic Personel") Then
             positionComboBox.Items.Clear()
-            positionComboBox.Items.Add("rex")
+            positionComboBox.Items.Add("Teacher")
+            positionComboBox.Items.Add("Secretary")
+            positionComboBox.Items.Add("Dean")
+            positionComboBox.Items.Add("Program Head")
+            positionComboBox.Items.Add("Principal")
+
+
         End If
 
         If personelComboBox.Text.Equals("Non Academic Personel") Then
-
+            positionComboBox.Items.Clear()
+            positionComboBox.Items.Add("Secretary")
+            positionComboBox.Items.Add("Janitor")
+            positionComboBox.Items.Add("Electrician")
+            positionComboBox.Items.Add("Officer")
+            positionComboBox.Items.Add("IT")
+            positionComboBox.Items.Add("Driver")
+            positionComboBox.Items.Add("Others")
         End If
 
         If personelComboBox.Text.Equals("Contructual") Then
-
+            positionComboBox.Items.Clear()
+            positionComboBox.Items.Add("Guard")
+            positionComboBox.Items.Add("Paintor")
+            positionComboBox.Items.Add("Mason")
+            positionComboBox.Items.Add("Carpenter")
+            positionComboBox.Items.Add("Others")
         End If
 
         If personelComboBox.Text.Equals("Part Time") Then
-
+            positionComboBox.Items.Clear()
+            positionComboBox.Items.Add("Part Time Teacher")
         End If
 
     End Sub
