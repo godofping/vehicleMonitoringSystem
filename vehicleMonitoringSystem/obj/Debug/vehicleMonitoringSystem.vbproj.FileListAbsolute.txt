@@ -36,3 +36,4 @@ C:\xampp\htdocs\vehicleMonitoringSystem\vehicleMonitoringSystem\bin\Debug\vehicl
 C:\xampp\htdocs\vehicleMonitoringSystem\vehicleMonitoringSystem\bin\Debug\vehicleMonitoringSystem.xml
 C:\xampp\htdocs\vehicleMonitoringSystem\vehicleMonitoringSystem\bin\Debug\MySql.Data.xml
 C:\xampp\htdocs\vehicleMonitoringSystem\vehicleMonitoringSystem\obj\Debug\vehicleMonitoringSystem.vbproj.CopyComplete
+C:\xampp\htdocs\vehicleMonitoringSystem\vehicleMonitoringSystem\bin\Debug\MySql.Data.dll

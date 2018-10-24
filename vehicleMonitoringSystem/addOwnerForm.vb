@@ -64,14 +64,15 @@ Public Class addOwnerForm
 
         If allSet Then
             runQuery("insert into profile_table (firstName, middleName, lastName, gender, contactNumber, role, dateRegistered, imageLocation, isDeleted, birthDay) values ('" & firstNameTextBox.Text & "', '" & middleNameTextBox.Text & "', '" & lastNameTextBox.Text & "', '" & genderComboBox.Text & "', '" & phoneNumberTextBox.Text & "', '" & roleComboBox.Text & "', '" & DateTime.Now.ToString("yyyy-MM-dd") & "', 'asdsa', '0', '" & birthDateBunifuDatepicker.Value.ToString("yyyy-MM-dd") & "')")
+
         End If
 
     End Sub
 
     Private Sub runQuery(ByVal query As String)
-        cmd.Connection = connection
-        cmd.CommandText = query
-        cmd.ExecuteScalar()
+        connection.Open()
+        cmd = New MySqlCommand(query, connection)
+        cmd.ExecuteReader()
         connection.Close()
         MsgBox("Added!")
     End Sub

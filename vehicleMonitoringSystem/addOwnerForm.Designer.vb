@@ -38,7 +38,6 @@ Partial Class addOwnerForm
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.phoneNumberTextBox = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.BunifuTileButton2 = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BunifuTileButton1 = New Bunifu.Framework.UI.BunifuTileButton()
         Me.closeButton = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -74,6 +73,7 @@ Partial Class addOwnerForm
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.visitorPanel = New System.Windows.Forms.Panel()
         Me.box1 = New System.Windows.Forms.TextBox()
+        Me.BunifuSeparator2 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.studentPanel.SuspendLayout()
         Me.highSchoolPanel.SuspendLayout()
         Me.collegePanel.SuspendLayout()
@@ -289,25 +289,6 @@ Partial Class addOwnerForm
         Me.phoneNumberTextBox.TabIndex = 53
         Me.phoneNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'BunifuTileButton2
-        '
-        Me.BunifuTileButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.BunifuTileButton2.color = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.BunifuTileButton2.colorActive = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.BunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTileButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
-        Me.BunifuTileButton2.ForeColor = System.Drawing.Color.White
-        Me.BunifuTileButton2.Image = Global.vehicleMonitoringSystem.My.Resources.Resources.icons8_clear_symbol_filled_100
-        Me.BunifuTileButton2.ImagePosition = 0
-        Me.BunifuTileButton2.ImageZoom = 40
-        Me.BunifuTileButton2.LabelPosition = 30
-        Me.BunifuTileButton2.LabelText = "CLEAR"
-        Me.BunifuTileButton2.Location = New System.Drawing.Point(490, 429)
-        Me.BunifuTileButton2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.BunifuTileButton2.Name = "BunifuTileButton2"
-        Me.BunifuTileButton2.Size = New System.Drawing.Size(97, 68)
-        Me.BunifuTileButton2.TabIndex = 56
-        '
         'BunifuTileButton1
         '
         Me.BunifuTileButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(53, Byte), Integer))
@@ -321,7 +302,7 @@ Partial Class addOwnerForm
         Me.BunifuTileButton1.ImageZoom = 40
         Me.BunifuTileButton1.LabelPosition = 30
         Me.BunifuTileButton1.LabelText = "SAVE"
-        Me.BunifuTileButton1.Location = New System.Drawing.Point(596, 429)
+        Me.BunifuTileButton1.Location = New System.Drawing.Point(596, 438)
         Me.BunifuTileButton1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BunifuTileButton1.Name = "BunifuTileButton1"
         Me.BunifuTileButton1.Size = New System.Drawing.Size(97, 68)
@@ -580,15 +561,15 @@ Partial Class addOwnerForm
         Me.imagePictureBox.Location = New System.Drawing.Point(490, 119)
         Me.imagePictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.imagePictureBox.Name = "imagePictureBox"
-        Me.imagePictureBox.Size = New System.Drawing.Size(188, 159)
+        Me.imagePictureBox.Size = New System.Drawing.Size(203, 174)
         Me.imagePictureBox.TabIndex = 61
         Me.imagePictureBox.TabStop = False
         '
         'BunifuTileButton3
         '
-        Me.BunifuTileButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.BunifuTileButton3.color = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.BunifuTileButton3.colorActive = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.BunifuTileButton3.BackColor = System.Drawing.Color.Green
+        Me.BunifuTileButton3.color = System.Drawing.Color.Green
+        Me.BunifuTileButton3.colorActive = System.Drawing.Color.DarkGreen
         Me.BunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuTileButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
         Me.BunifuTileButton3.ForeColor = System.Drawing.Color.White
@@ -597,7 +578,7 @@ Partial Class addOwnerForm
         Me.BunifuTileButton3.ImageZoom = 40
         Me.BunifuTileButton3.LabelPosition = 30
         Me.BunifuTileButton3.LabelText = "START"
-        Me.BunifuTileButton3.Location = New System.Drawing.Point(538, 285)
+        Me.BunifuTileButton3.Location = New System.Drawing.Point(543, 312)
         Me.BunifuTileButton3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BunifuTileButton3.Name = "BunifuTileButton3"
         Me.BunifuTileButton3.Size = New System.Drawing.Size(97, 68)
@@ -727,11 +708,24 @@ Partial Class addOwnerForm
         Me.box1.Size = New System.Drawing.Size(100, 20)
         Me.box1.TabIndex = 69
         '
+        'BunifuSeparator2
+        '
+        Me.BunifuSeparator2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BunifuSeparator2.LineThickness = 10
+        Me.BunifuSeparator2.Location = New System.Drawing.Point(492, 388)
+        Me.BunifuSeparator2.Name = "BunifuSeparator2"
+        Me.BunifuSeparator2.Size = New System.Drawing.Size(201, 35)
+        Me.BunifuSeparator2.TabIndex = 70
+        Me.BunifuSeparator2.Transparency = 255
+        Me.BunifuSeparator2.Vertical = False
+        '
         'addOwnerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(739, 535)
+        Me.Controls.Add(Me.BunifuSeparator2)
         Me.Controls.Add(Me.box1)
         Me.Controls.Add(Me.studentPanel)
         Me.Controls.Add(Me.peronelPanel)
@@ -741,7 +735,6 @@ Partial Class addOwnerForm
         Me.Controls.Add(Me.imagePictureBox)
         Me.Controls.Add(Me.BunifuCustomLabel7)
         Me.Controls.Add(Me.roleComboBox)
-        Me.Controls.Add(Me.BunifuTileButton2)
         Me.Controls.Add(Me.BunifuTileButton1)
         Me.Controls.Add(Me.BunifuCustomLabel6)
         Me.Controls.Add(Me.phoneNumberTextBox)
@@ -799,7 +792,6 @@ Partial Class addOwnerForm
     Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents phoneNumberTextBox As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuTileButton1 As Bunifu.Framework.UI.BunifuTileButton
-    Friend WithEvents BunifuTileButton2 As Bunifu.Framework.UI.BunifuTileButton
     Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents roleComboBox As ComboBox
     Friend WithEvents studentPanel As Panel
@@ -833,4 +825,5 @@ Partial Class addOwnerForm
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents visitorPanel As Panel
     Friend WithEvents box1 As TextBox
+    Friend WithEvents BunifuSeparator2 As Bunifu.Framework.UI.BunifuSeparator
 End Class
