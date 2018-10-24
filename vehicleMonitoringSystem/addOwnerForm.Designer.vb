@@ -24,13 +24,13 @@ Partial Class addOwnerForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
-        Me.usernameTextBox = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.firstNameTextBox = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.titleLabel = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuMetroTextbox1 = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.middleNameTextBox = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuMetroTextbox2 = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.lastNameTextBox = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.genderComboBox = New System.Windows.Forms.ComboBox()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
@@ -42,13 +42,17 @@ Partial Class addOwnerForm
         Me.BunifuTileButton1 = New Bunifu.Framework.UI.BunifuTileButton()
         Me.closeButton = New Bunifu.Framework.UI.BunifuTileButton()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.roleComboBox = New System.Windows.Forms.ComboBox()
         Me.studentPanel = New System.Windows.Forms.Panel()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.departmentCombBox = New System.Windows.Forms.ComboBox()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BunifuTileButton3 = New Bunifu.Framework.UI.BunifuTileButton()
         Me.studentPanel.SuspendLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -56,23 +60,23 @@ Partial Class addOwnerForm
         Me.BunifuElipse1.ElipseRadius = 50
         Me.BunifuElipse1.TargetControl = Me
         '
-        'usernameTextBox
+        'firstNameTextBox
         '
-        Me.usernameTextBox.BackColor = System.Drawing.Color.White
-        Me.usernameTextBox.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.usernameTextBox.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.usernameTextBox.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.usernameTextBox.BorderThickness = 3
-        Me.usernameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.usernameTextBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.usernameTextBox.ForeColor = System.Drawing.Color.Black
-        Me.usernameTextBox.isPassword = False
-        Me.usernameTextBox.Location = New System.Drawing.Point(33, 146)
-        Me.usernameTextBox.Margin = New System.Windows.Forms.Padding(4)
-        Me.usernameTextBox.Name = "usernameTextBox"
-        Me.usernameTextBox.Size = New System.Drawing.Size(278, 44)
-        Me.usernameTextBox.TabIndex = 13
-        Me.usernameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.firstNameTextBox.BackColor = System.Drawing.Color.White
+        Me.firstNameTextBox.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.firstNameTextBox.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.firstNameTextBox.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.firstNameTextBox.BorderThickness = 3
+        Me.firstNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.firstNameTextBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.firstNameTextBox.ForeColor = System.Drawing.Color.Black
+        Me.firstNameTextBox.isPassword = False
+        Me.firstNameTextBox.Location = New System.Drawing.Point(33, 146)
+        Me.firstNameTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.firstNameTextBox.Name = "firstNameTextBox"
+        Me.firstNameTextBox.Size = New System.Drawing.Size(278, 44)
+        Me.firstNameTextBox.TabIndex = 13
+        Me.firstNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'titleLabel
         '
@@ -110,23 +114,23 @@ Partial Class addOwnerForm
         Me.BunifuCustomLabel2.TabIndex = 19
         Me.BunifuCustomLabel2.Text = "Middle Name"
         '
-        'BunifuMetroTextbox1
+        'middleNameTextBox
         '
-        Me.BunifuMetroTextbox1.BackColor = System.Drawing.Color.White
-        Me.BunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.BunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.BunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.BunifuMetroTextbox1.BorderThickness = 3
-        Me.BunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.Black
-        Me.BunifuMetroTextbox1.isPassword = False
-        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(33, 232)
-        Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
-        Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(278, 44)
-        Me.BunifuMetroTextbox1.TabIndex = 18
-        Me.BunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.middleNameTextBox.BackColor = System.Drawing.Color.White
+        Me.middleNameTextBox.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.middleNameTextBox.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.middleNameTextBox.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.middleNameTextBox.BorderThickness = 3
+        Me.middleNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.middleNameTextBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.middleNameTextBox.ForeColor = System.Drawing.Color.Black
+        Me.middleNameTextBox.isPassword = False
+        Me.middleNameTextBox.Location = New System.Drawing.Point(33, 232)
+        Me.middleNameTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.middleNameTextBox.Name = "middleNameTextBox"
+        Me.middleNameTextBox.Size = New System.Drawing.Size(278, 44)
+        Me.middleNameTextBox.TabIndex = 18
+        Me.middleNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel3
         '
@@ -140,23 +144,23 @@ Partial Class addOwnerForm
         Me.BunifuCustomLabel3.TabIndex = 21
         Me.BunifuCustomLabel3.Text = "Last Name"
         '
-        'BunifuMetroTextbox2
+        'lastNameTextBox
         '
-        Me.BunifuMetroTextbox2.BackColor = System.Drawing.Color.White
-        Me.BunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.BunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.BunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.BunifuMetroTextbox2.BorderThickness = 3
-        Me.BunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMetroTextbox2.ForeColor = System.Drawing.Color.Black
-        Me.BunifuMetroTextbox2.isPassword = False
-        Me.BunifuMetroTextbox2.Location = New System.Drawing.Point(33, 316)
-        Me.BunifuMetroTextbox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox2.Name = "BunifuMetroTextbox2"
-        Me.BunifuMetroTextbox2.Size = New System.Drawing.Size(278, 44)
-        Me.BunifuMetroTextbox2.TabIndex = 20
-        Me.BunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.lastNameTextBox.BackColor = System.Drawing.Color.White
+        Me.lastNameTextBox.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.lastNameTextBox.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.lastNameTextBox.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.lastNameTextBox.BorderThickness = 3
+        Me.lastNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lastNameTextBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.lastNameTextBox.ForeColor = System.Drawing.Color.Black
+        Me.lastNameTextBox.isPassword = False
+        Me.lastNameTextBox.Location = New System.Drawing.Point(33, 316)
+        Me.lastNameTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.lastNameTextBox.Name = "lastNameTextBox"
+        Me.lastNameTextBox.Size = New System.Drawing.Size(278, 44)
+        Me.lastNameTextBox.TabIndex = 20
+        Me.lastNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'genderComboBox
         '
@@ -320,24 +324,24 @@ Partial Class addOwnerForm
         Me.BunifuCustomLabel7.TabIndex = 58
         Me.BunifuCustomLabel7.Text = "Role"
         '
-        'ComboBox1
+        'roleComboBox
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Student", "Personel", "Visitor"})
-        Me.ComboBox1.Location = New System.Drawing.Point(355, 146)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(278, 29)
-        Me.ComboBox1.TabIndex = 57
+        Me.roleComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.roleComboBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.roleComboBox.FormattingEnabled = True
+        Me.roleComboBox.Items.AddRange(New Object() {"Student", "Personel", "Visitor"})
+        Me.roleComboBox.Location = New System.Drawing.Point(355, 146)
+        Me.roleComboBox.Name = "roleComboBox"
+        Me.roleComboBox.Size = New System.Drawing.Size(278, 29)
+        Me.roleComboBox.TabIndex = 57
         '
         'studentPanel
         '
         Me.studentPanel.Controls.Add(Me.BunifuCustomLabel8)
-        Me.studentPanel.Controls.Add(Me.ComboBox2)
+        Me.studentPanel.Controls.Add(Me.departmentCombBox)
         Me.studentPanel.Location = New System.Drawing.Point(324, 186)
         Me.studentPanel.Name = "studentPanel"
-        Me.studentPanel.Size = New System.Drawing.Size(330, 321)
+        Me.studentPanel.Size = New System.Drawing.Size(309, 321)
         Me.studentPanel.TabIndex = 60
         Me.studentPanel.Visible = False
         '
@@ -353,29 +357,58 @@ Partial Class addOwnerForm
         Me.BunifuCustomLabel8.TabIndex = 51
         Me.BunifuCustomLabel8.Text = "Department"
         '
-        'ComboBox2
+        'departmentCombBox
         '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Grade School", "High School", "College"})
-        Me.ComboBox2.Location = New System.Drawing.Point(30, 46)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(278, 29)
-        Me.ComboBox2.TabIndex = 50
+        Me.departmentCombBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.departmentCombBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.departmentCombBox.FormattingEnabled = True
+        Me.departmentCombBox.Items.AddRange(New Object() {"Grade School", "High School", "College"})
+        Me.departmentCombBox.Location = New System.Drawing.Point(30, 46)
+        Me.departmentCombBox.Name = "departmentCombBox"
+        Me.departmentCombBox.Size = New System.Drawing.Size(278, 29)
+        Me.departmentCombBox.TabIndex = 50
         '
         'ErrorProvider1
         '
         Me.ErrorProvider1.ContainerControl = Me
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(653, 146)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(250, 196)
+        Me.PictureBox1.TabIndex = 61
+        Me.PictureBox1.TabStop = False
+        '
+        'BunifuTileButton3
+        '
+        Me.BunifuTileButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.BunifuTileButton3.color = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.BunifuTileButton3.colorActive = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.BunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTileButton3.Font = New System.Drawing.Font("Century Gothic", 15.75!)
+        Me.BunifuTileButton3.ForeColor = System.Drawing.Color.White
+        Me.BunifuTileButton3.Image = Global.vehicleMonitoringSystem.My.Resources.Resources.icons8_screenshot_filled_50
+        Me.BunifuTileButton3.ImagePosition = 0
+        Me.BunifuTileButton3.ImageZoom = 40
+        Me.BunifuTileButton3.LabelPosition = 30
+        Me.BunifuTileButton3.LabelText = "START"
+        Me.BunifuTileButton3.Location = New System.Drawing.Point(718, 351)
+        Me.BunifuTileButton3.Margin = New System.Windows.Forms.Padding(6)
+        Me.BunifuTileButton3.Name = "BunifuTileButton3"
+        Me.BunifuTileButton3.Size = New System.Drawing.Size(129, 84)
+        Me.BunifuTileButton3.TabIndex = 62
         '
         'addOwnerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(985, 659)
+        Me.Controls.Add(Me.BunifuTileButton3)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.studentPanel)
         Me.Controls.Add(Me.BunifuCustomLabel7)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.roleComboBox)
         Me.Controls.Add(Me.BunifuTileButton2)
         Me.Controls.Add(Me.BunifuTileButton1)
         Me.Controls.Add(Me.BunifuCustomLabel6)
@@ -386,12 +419,12 @@ Partial Class addOwnerForm
         Me.Controls.Add(Me.BunifuCustomLabel4)
         Me.Controls.Add(Me.genderComboBox)
         Me.Controls.Add(Me.BunifuCustomLabel3)
-        Me.Controls.Add(Me.BunifuMetroTextbox2)
+        Me.Controls.Add(Me.lastNameTextBox)
         Me.Controls.Add(Me.BunifuCustomLabel2)
-        Me.Controls.Add(Me.BunifuMetroTextbox1)
+        Me.Controls.Add(Me.middleNameTextBox)
         Me.Controls.Add(Me.BunifuCustomLabel1)
         Me.Controls.Add(Me.titleLabel)
-        Me.Controls.Add(Me.usernameTextBox)
+        Me.Controls.Add(Me.firstNameTextBox)
         Me.Controls.Add(Me.closeButton)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "addOwnerForm"
@@ -400,6 +433,7 @@ Partial Class addOwnerForm
         Me.studentPanel.ResumeLayout(False)
         Me.studentPanel.PerformLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -407,13 +441,13 @@ Partial Class addOwnerForm
 
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents closeButton As Bunifu.Framework.UI.BunifuTileButton
-    Friend WithEvents usernameTextBox As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents firstNameTextBox As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents titleLabel As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuMetroTextbox2 As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents lastNameTextBox As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents middleNameTextBox As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents genderComboBox As ComboBox
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuSeparator1 As Bunifu.Framework.UI.BunifuSeparator
@@ -424,9 +458,12 @@ Partial Class addOwnerForm
     Friend WithEvents BunifuTileButton1 As Bunifu.Framework.UI.BunifuTileButton
     Friend WithEvents BunifuTileButton2 As Bunifu.Framework.UI.BunifuTileButton
     Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents roleComboBox As ComboBox
     Friend WithEvents studentPanel As Panel
     Friend WithEvents BunifuCustomLabel8 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents departmentCombBox As ComboBox
     Friend WithEvents ErrorProvider1 As ErrorProvider
+    Friend WithEvents BunifuTileButton3 As Bunifu.Framework.UI.BunifuTileButton
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Timer1 As Timer
 End Class
