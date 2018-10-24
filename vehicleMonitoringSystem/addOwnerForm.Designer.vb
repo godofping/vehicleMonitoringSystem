@@ -73,6 +73,7 @@ Partial Class addOwnerForm
         Me.BunifuCustomLabel12 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.visitorPanel = New System.Windows.Forms.Panel()
+        Me.box1 = New System.Windows.Forms.TextBox()
         Me.studentPanel.SuspendLayout()
         Me.highSchoolPanel.SuspendLayout()
         Me.collegePanel.SuspendLayout()
@@ -719,11 +720,19 @@ Partial Class addOwnerForm
         Me.visitorPanel.TabIndex = 68
         Me.visitorPanel.Visible = False
         '
+        'box1
+        '
+        Me.box1.Location = New System.Drawing.Point(217, 25)
+        Me.box1.Name = "box1"
+        Me.box1.Size = New System.Drawing.Size(100, 20)
+        Me.box1.TabIndex = 69
+        '
         'addOwnerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(739, 535)
+        Me.Controls.Add(Me.box1)
         Me.Controls.Add(Me.studentPanel)
         Me.Controls.Add(Me.peronelPanel)
         Me.Controls.Add(Me.visitorPanel)
@@ -823,4 +832,5 @@ Partial Class addOwnerForm
     Friend WithEvents BunifuCustomLabel12 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents visitorPanel As Panel
+    Friend WithEvents box1 As TextBox
 End Class

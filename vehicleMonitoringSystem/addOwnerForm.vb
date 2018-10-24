@@ -44,8 +44,6 @@ Public Class addOwnerForm
             ErrorProvider1.SetError(genderComboBox, "")
         End If
 
-
-
         If phoneNumberTextBox.Text.Equals("") Then
             ErrorProvider1.SetError(phoneNumberTextBox, "Please enter phone number.")
             allSet = False
@@ -64,6 +62,18 @@ Public Class addOwnerForm
         End If
 
 
+        If allSet Then
+            runQuery("insert into profile_table (firstName, middleName, lastName, gender, contactNumber, role, dateRegistered, imageLocation, isDeleted, birthDay) values ('" & firstNameTextBox.Text & "', '" & middleNameTextBox.Text & "', '" & lastNameTextBox.Text & "', '" & genderComboBox.Text & "', '" & phoneNumberTextBox.Text & "', '" & roleComboBox.Text & "', '" & DateTime.Now.ToString("yyyy-MM-dd") & "', 'asdsa', '0', '" & birthDateBunifuDatepicker.Value.ToString("yyyy-MM-dd") & "')")
+        End If
+
+    End Sub
+
+    Private Sub runQuery(ByVal query As String)
+        cmd.Connection = connection
+        cmd.CommandText = query
+        cmd.ExecuteScalar()
+        connection.Close()
+        MsgBox("Added!")
     End Sub
 
     Private Sub roleComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles roleComboBox.SelectedIndexChanged
